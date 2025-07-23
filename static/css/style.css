@@ -1,0 +1,35 @@
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#chat-container div {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Scrollbar styling */
+#chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: rgba(79, 70, 229, 0.3);
+    border-radius: 3px;
+}
+
+/* Input transition */
+#user-input {
+    transition: all 0.2s;
+}
+
+#user-input:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Book card hover */
+.bg-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
